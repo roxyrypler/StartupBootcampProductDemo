@@ -2,7 +2,8 @@
 
 
 How to run:
-global install
+global install:
+
 npm install electron -g
 
 cd into root folder of repo
