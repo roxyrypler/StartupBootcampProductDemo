@@ -10,5 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^4.0.1"
+  },
+  "dependencies": {
+    "edit-json-file": "^1.2.1",
+    "socket.io": "^2.2.0"
   }
 }
