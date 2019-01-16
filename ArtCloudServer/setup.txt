@@ -1,0 +1,7 @@
+make the server public with localtunnel.me!
+
+start random domain
+lt --port 3000
+
+start fixed domain
+lt --port 3000 --subdomain dragonstick

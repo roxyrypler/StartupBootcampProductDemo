@@ -2,14 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Drawsome - demo</title>
-	  
-	  
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js" ></script>
-	  
-	  
+    <title>ArtCloud - demo</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"  ></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js" ></script>
 	  <!--simple placeholder style-->
-	  
 	  <style>
 		  body {
 			  padding: 0px;
@@ -17,13 +13,13 @@
 			  overflow: hidden;
 		  }
 	  </style>
-	  
-	  
-	  
   </head>
   <body>
 	  
-	  
+	  <button onclick="rosaClicked()" >Rosa</button>
+	  <button onclick="blåClicked()">Blå</button>
+	  <button onclick="grønnClicked()">Grønn</button>
+	  <button onclick="lillaclicked()">Lilla</button>
 	  
 	  <script src="render.js" ></script>
   </body>
