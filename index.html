@@ -12,14 +12,68 @@
 			  margin: 0px;
 			  overflow: hidden;
 		  }
+		  
+		  .networking {
+			  background-color: #2c3e50;
+			  width: 200px;
+			  height: 100vh;
+			  position: absolute;
+			  left: 0px;
+			  
+		  }
+		  
+		  .menu {
+			  position: absolute;
+			  display: flex;
+			  flex-direction: column;
+			  background-color: #8e44ad;
+			  width: 200px;
+			  height: 100vh;
+			  right: 0px;
+		  }
+		  
+		  .btn {
+			  border: 0px;
+			  width: 50px;
+			  height: 30px;
+			  margin-bottom: 10px;
+			  box-shadow: 5px 5px 10px black; 
+		  }
+		  .btn:hover {
+			  width: 55px;
+			  height: 35px;
+		  }
+		  .rosa {
+			 background-color: #ef5777; 
+		  }
+		  .blaa {
+			 background-color: #4bcffa; 
+		  }
+		  .gronn {
+			 background-color: #0be881; 
+		  }
+		  .lilla {
+			 background-color: #575fcf; 
+		  }
 	  </style>
   </head>
   <body>
 	  
-	  <button onclick="rosaClicked()" >Rosa</button>
-	  <button onclick="blåClicked()">Blå</button>
-	  <button onclick="grønnClicked()">Grønn</button>
-	  <button onclick="lillaclicked()">Lilla</button>
+	  <div class="networking" >
+	  
+		  
+	  
+	  </div>
+	  
+	  <div class="menu" >
+		  
+		<div class="" ></div>
+		  
+	  	<button onclick="rosaClicked()" class="btn rosa" ></button>
+	    <button onclick="blåClicked()" class="btn blaa"></button>
+	    <button onclick="grønnClicked()" class="btn gronn"></button>
+	    <button onclick="lillaclicked()" class="btn lilla"></button>
+	  </div>
 	  
 	  <script src="render.js" ></script>
   </body>

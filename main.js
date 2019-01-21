@@ -5,12 +5,12 @@ const { app, BrowserWindow } = require('electron')
 let win
 
 function createWindow () {
-  win = new BrowserWindow({ width: 1000, height: 800 });
-
+  win = new BrowserWindow({ width: 1200, height: 800 });
+  win.setResizable(false);
   win.loadFile('index.html');
 
-  win.webContents.openDevTools()
-
+  //win.webContents.openDevTools()
+  //win.setFullScreen(true);
   win.on('closed', () => {
     win = null
   });

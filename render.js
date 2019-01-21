@@ -3,8 +3,8 @@
 
 let ipc = require('electron').ipcRenderer;
 
-let cW = 1000;
-let cH = 700;
+let cW = window.innerWidth;
+let cH = window.innerHeight;
 let socket;
 
 let rosa = '#ef5777';
@@ -16,7 +16,7 @@ let clientColor = lilla;
 let serverColor = lilla;
 
 function setup() {
-	createCanvas(cW, cH);
+	createCanvas(window.innerWidth, window.innerHeight);
 	background(0);
 	socket = io.connect('https://dragonstick.localtunnel.me');
 	socket.on('mouse', newDrawing);
@@ -47,6 +47,10 @@ function mouseDragged() {
 	}
 	socket.emit('mouse', data);
 	
+}
+
+function windowResized() {
+	centerCanvas();
 }
 
 function rosaClicked() {
